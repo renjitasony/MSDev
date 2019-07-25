@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+            var namet = Array();
+            var i=0;
+        function addToList(){                                 
+            var movieName=document.getElementById("movie").value;           
+            namet[i] = movieName;
+            //document.getElementById("entry").innerHTML= name.toString();
+            console.log(movieName);    
+            console.log(namet[0]);  
+            var pr = namet[0].toString();     
+            console.log(pr);        
+            i++;
+
+            var res=" ";
+            for(var j=0; j < namet.length;j++){
+               res+= namet[j] + "<br>" ;
+            }
+            document.getElementById("entry").innerHTML= res;            
+             }
+        
+        </script>
+</head>
+<body>
+        <table class="table"> 
+                <tr>
+                    <td><label id="l1">Enter name of the movie:</label></td>
+                    <td><input type="text" name="movie" id="movie" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button onclick="addToList();">Submit</button></td>
+                </tr>
+                <tr>
+                    <td><label id="entry"></label></td>
+                </tr>
+                </table>
+               
+</body>
+</html>
