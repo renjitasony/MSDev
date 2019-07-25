@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./js/mathops.js"></script>
+</head>
+<body>
+    <form>
+        <table class="table">
+            <tr>
+                <td><label>Enter number 1:</label></td>
+                <td><input type="text" id="one" class="form-control" pattern="[0-9]"/></td>
+            </tr>    
+            <tr>
+                <td><label>Enter number 2:</label></td>
+                <td><input type="text" id="two" class="form-control"/></td>
+            </tr>      
+            <tr>
+                <td><label>Operation:</label></td>
+                <td>
+                    <select name="oper" id="op" class="form-control" onchange="opidentify();">
+                        <option value=""></option>
+                        <option value="Addition">Addition</option>
+                        <option value="Subtraction">Subtraction</option>
+                        <option value="Multiplication">Multiplication</option>
+                        <option value="Division">Division</option>
+                    </select>
+                </td>
+            </tr>       
+    <tr>
+        <td> </td>
+        <td><input type="button" value="Submit" class="btn btn-success" onclick="opidentify();"/></td>
+    </tr>
+    <tr>
+        
+         <td><label>Result:</label></td>
+        <td><label class="lb1" id="result"></label></td>
+        
+    </tr>
+        </table>
+        </form>
+</body>
+</html>
