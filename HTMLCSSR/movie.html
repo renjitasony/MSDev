@@ -9,8 +9,11 @@
             var namet = Array();
             var i=0;
         function addToList(){                                 
-            var movieName=document.getElementById("movie").value;           
-            namet[i] = movieName;
+            namet[i] = document.getElementById("movie").value;           
+            if(namet[i] == ""){
+                alert("Please enter the name!");
+                return false;
+            }
             //document.getElementById("entry").innerHTML= name.toString();
             console.log(movieName);    
             console.log(namet[0]);  

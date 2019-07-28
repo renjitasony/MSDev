@@ -9,15 +9,15 @@
     <script src="./js/mathops.js"></script>
 </head>
 <body>
-    <form>
+    <form name="myform" onsubmit="return (validateForm());">
         <table class="table">
             <tr>
                 <td><label>Enter number 1:</label></td>
-                <td><input type="text" id="one" class="form-control" pattern="[0-9]"/></td>
+                <td><input type="number" id="one" class="form-control" pattern="[0-9]"/></td>
             </tr>    
             <tr>
                 <td><label>Enter number 2:</label></td>
-                <td><input type="text" id="two" class="form-control"/></td>
+                <td><input type="number" id="two" class="form-control" name="two"/></td>
             </tr>      
             <tr>
                 <td><label>Operation:</label></td>
