@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myPro = new Promise((resolve,reject)=>{
+            var mygrade = "a+";
+            if(mygrade=="a+"){
+                resolve("Promise resolved");
+            }
+            else{
+                reject();
+            }
+        });
+        myPro.then((msg)=>{
+            console.log(msg);
+        }).catch(()=>{
+            console.log("Promise rejected");
+        });
+    </script>
+</body>
+</html>

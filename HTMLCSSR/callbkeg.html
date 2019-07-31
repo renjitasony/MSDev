@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+     <div id="result">
+
+     </div>
+     <script>
+            const messages =[{"title":"msg1"}];
+            function sendMessage1(){
+                setTimeout(()=>{
+                    let output ='';
+                    for(var i=0; i<messages.length;i++){
+                        output+="<li>"+messages[i].title +"6788</li>";
+                    }
+                    document.getElementById("result").innerHTML = output;
+                },1000);
+            }
+            function sendMessage2(){
+                setTimeout(() => {
+                    messages.push({"title":"msg2"});
+                    let output ='';
+                    for(var i=0; i<messages.length;i++){
+                        output+="<li>"+messages[i].title +"cfbvmc</li>";
+                    }
+                    document.getElementById("result").innerHTML = output;
+                }, 2000);
+            }
+            sendMessage1();
+            sendMessage2();
+        </script>
+</body>
+</html>

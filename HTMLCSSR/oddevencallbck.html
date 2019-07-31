@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <form action="">
+        <label for="num">Enter the number</label>
+        <input type="text" id="num">
+        <button id ="oddeven" >Submit</button>
+    </form>
+    <div id="result">
+
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#oddeven").click(function(){
+                var no = document.getElementById("num").value;
+                checkeo(no,(res)=>{
+            document.getElementById("result").innerHTML = res; 
+            });
+            });
+        });
+
+        function checkeo(num,callback){
+            if((num%2) == 0){
+                var res = "Even";
+            }else{
+                var res = "Odd";
+            }
+            callback(res);
+        }      
+    </script>
+</body>
+</html>
